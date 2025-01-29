@@ -5,3 +5,10 @@ import React, { Component } from 'react';
 interface CounterState {
   count: number; 
 }
+
+//  Define the class component with type annotations
+class Counter extends Component<{}, CounterState> {
+    state: CounterState = {
+      count: 0, 
+      // Initialize count as a number
+    };
